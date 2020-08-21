@@ -178,6 +178,42 @@ nav ul li a:hover{
         padding: 2px 16px;
   }
 
+  /*contact*/
+  #CONTACT{
+      
+    text-align: center;
+    background-color: #eee;
+    
+     color: black;
+
+  }
+  #CONTACT h1{
+    font-size: 50px;
+    font-weight: 500;
+   line-height: 1.3 em;
+   
+}
+.contact{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact div p{
+    font-weight: 100;
+}
+
+.purple{
+    color: #9c27b0;
+}
+/*footer*/
+.footer{
+
+    height: 20px;
+    background-color: #8e24aa;
+    text-align: center;
+}
+
 @keyframes down {
     0%{
         transform: translateY(-30px);
@@ -230,6 +266,12 @@ nav ul li a:hover{
 {
     .card{
         width: 250px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact div{
+        margin-top: 10px;
     }
 }
 @media (max-width:400px)
