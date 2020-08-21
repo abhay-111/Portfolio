@@ -1,0 +1,254 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Roboto",sans-serif;
+   
+}
+
+body{
+    margin:0%;
+    width:100%;
+    height: 100vh;
+   
+   font-family:"Exo",sans-serif;
+   color:#fff;
+   background: linear-gradient(-45deg,#E6E6FA,   #DDA0DD,#DA70D6);
+   background-size: 400% 400%;
+   animation: gradientBG 4s ease infinite;
+}
+@keyframes gradientBG{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+
+nav{
+    width: 100%;
+    background-color: #8e24aa;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+hr{
+    color: white;
+    border: 1px solid white;
+}
+nav ul li {
+   flex-wrap: wrap;
+   margin: 15px 60px;
+    list-style: none;
+}
+nav ul li a{
+
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 2s ease;
+
+   
+}
+nav ul li a:hover{
+    border-bottom: 1px solid white;
+    
+}
+.header{
+    height: 65vh;
+    width: 100%;
+    margin-top: 15%;
+    text-align: center;
+}
+.header h1{
+    font-size: 55px;
+    font-weight: 500;
+}
+.down{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px 8px;
+    animation:down .5s infinite alternate;
+}
+/*abpout*/
+#ABOUT{
+    text-align: center;
+    background-color: white;
+    color: black;
+
+}
+#ABOUT h1{
+    font-size: 50px;
+    font-weight: 500;
+   line-height: 1.3 em;
+   margin-bottom: 30px;
+}
+.picture{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content p{
+    margin-top: 10px;
+}
+.picture img{
+    height: 300px;
+    width: 300px;
+    margin-top: 60px;
+    border-radius: 50%;
+    border: 4px solid #8e24aa;
+}
+.view{
+   
+    padding: 10px 30px;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #8e24aa;
+    color: white;
+}
+
+.content div{
+    margin-top: 100px;
+
+}
+.display-pic{
+    flex: 1;
+}
+.content{
+    flex: 1;
+   
+}
+.content div{
+    text-align: left;
+}
+#ABOUT p{
+    color: gray;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+/*project*/
+#PROJECT{
+    text-align: center;
+   background-color: #eee;
+   
+    color: black;
+
+}
+#PROJECT h1{
+    font-size: 50px;
+    font-weight: 500;
+   line-height: 1.3 em;
+   margin-bottom: 30px;
+}
+.project{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    
+    width: 320px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container1 {
+      height: 200px;
+        padding: 2px 16px;
+  }
+
+@keyframes down {
+    0%{
+        transform: translateY(-30px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+@media (max-width:768px)
+{
+    .header h1{
+        font-size: 40px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    .down{
+        height: 30px;
+        width: 30px;
+    }
+    .content div{
+        text-align: center;
+    }
+    .picture img{
+        height: 200px;
+        width: 200px;
+    }
+    #ABOUT p{
+        margin: 10px 10px;
+        font-size: 14px;
+    }
+    .card{
+    margin-bottom: 40px;
+    }
+    nav ul li{
+        margin: 10px 25px;
+        
+    }
+    .header{
+        margin-top: 38%;
+    }
+  nav{
+      margin-bottom: 500px;
+  }
+}
+@media (max-width:540px)
+{
+    .card{
+        width: 250px;
+    }
+}
+@media (max-width:400px)
+{
+    .header h1{
+        font-size: 35px;
+    }
+    .header h2{
+        font-size: 20px;
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+    .down{
+        height: 30px;
+        width: 30px;
+    }
+    nav ul li{
+        margin: 10px 15px;
+        
+    }
+}
