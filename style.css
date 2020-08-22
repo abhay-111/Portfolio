@@ -1,7 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    list-style: none;
+    
     scroll-behavior: smooth;
     font-family: "Roboto",sans-serif;
    
@@ -14,9 +14,9 @@ body{
    
    font-family:"Exo",sans-serif;
    color:#fff;
-   background: linear-gradient(-35deg,#880e4f,   #ffdb99,#8e24aa);
+   background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
    background-size: 400% 400%;
-   animation: gradientBG 3s ease infinite;
+   animation: gradientBG 5s ease infinite;
 }
 @keyframes gradientBG{
 	0%{
@@ -33,10 +33,13 @@ body{
 
 nav{
     width: 100%;
-    background-color: #8e24aa !important;
+    background-color: #e73c7e !important;
     position: fixed;
     top: 0;
     right: 0;
+    background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+   background-size: 400% 400%;
+   animation: gradientBG 5s ease infinite;
 
 }
 nav ul{
@@ -49,7 +52,7 @@ hr{
 }
 nav ul li {
    flex-wrap: wrap;
-   margin: 15px 60px;
+   margin: 15px 50px;
     list-style: none;
 }
 nav ul li a{
@@ -108,14 +111,16 @@ nav ul li a:hover{
     width: 300px;
     margin-top: 60px;
     border-radius: 50%;
-    border: 4px solid #8e24aa;
+    border: 4px solid #ee7752;
 }
 .view{
    
     padding: 10px 30px;
     font-size: 12px;
     text-decoration: none;
-    background-color: #8e24aa;
+    background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+   background-size: 400% 400%;
+   animation: gradientBG 5s ease infinite;
     color: white;
 }
 
@@ -209,9 +214,43 @@ nav ul li a:hover{
 /*footer*/
 .footer{
 
-    height: 20px;
-    background-color: #8e24aa;
+    height: 40px;
+    background: linear-gradient(-45deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
     text-align: center;
+}
+
+#ACHIEVEMENTS{
+    text-align: center;
+    background-color: white;
+    color: gray;
+}
+#ACHIEVEMENTS h1{
+    font-size: 40px;
+    font-weight: 500;
+   line-height: 1.3 em;
+   color: black;
+  
+}
+.award{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.award div{
+    flex :1;
+    margin: 10px 10px;
+}
+.award-image{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+}
+.award-title{
+    font-size: 27px;
+    color: black;
 }
 
 @keyframes down {
@@ -224,9 +263,12 @@ nav ul li a:hover{
     }
 }
 
-
 @media (max-width:768px)
 {
+    #ACHIEVEMENT h1{
+        font-size: 30px;
+    }
+    
     .header h1{
         font-size: 40px;
     }
@@ -252,7 +294,7 @@ nav ul li a:hover{
     margin-bottom: 40px;
     }
     nav ul li{
-        margin: 10px 25px;
+        margin: 10px 15px;
         
     }
     .header{
@@ -261,6 +303,18 @@ nav ul li a:hover{
   nav{
       margin-bottom: 500px;
   }
+  .award{
+      flex-direction: column-reverse;
+  }
+  .award-image{
+      
+      height: 200px;
+      width: 200px;
+  }
+  .award-name ul{
+      margin: 10px 20px;
+  }
+  
 }
 @media (max-width:540px)
 {
@@ -276,6 +330,10 @@ nav ul li a:hover{
 }
 @media (max-width:400px)
 {
+    .achieve{
+        font-size: 20px;
+    }
+    
     .header h1{
         font-size: 35px;
     }
@@ -283,14 +341,18 @@ nav ul li a:hover{
         font-size: 20px;
     }
     nav ul li a{
-        font-size: 12px;
+        font-size: 11px;
     }
     .down{
         height: 30px;
         width: 30px;
     }
     nav ul li{
-        margin: 10px 15px;
+        margin: 10px 4px;
         
     }
+    
+  .award-title{
+    font-size: 17px;
+}
 }
