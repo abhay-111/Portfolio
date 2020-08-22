@@ -130,6 +130,10 @@ nav ul li a:hover{
 }
 .display-pic{
     flex: 1;
+    
+}
+.display-pic img{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8)
 }
 .content{
     flex: 1;
@@ -285,6 +289,7 @@ nav ul li a:hover{
     .picture img{
         height: 200px;
         width: 200px;
+        
     }
     #ABOUT p{
         margin: 10px 10px;
@@ -304,7 +309,7 @@ nav ul li a:hover{
       margin-bottom: 500px;
   }
   .award{
-      flex-direction: column-reverse;
+      flex-direction: column;
   }
   .award-image{
       
